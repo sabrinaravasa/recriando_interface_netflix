@@ -1,0 +1,19 @@
+/*formatação condicional válida para tela de, no máximo 750px, pois a partir disso começa a ficar ruim distorcido, então vamos elaborar outra formatação*/
+@media screen and (max-width: 750px){
+    header .container{
+        display: flex;
+        flex-direction: column; /*quando a tela ficar menor que 750px os ícones início, séries, filmes e documentários vão para a linha de baixo*/
+    }
+    .botao{
+        margin-top: 7px;
+        width: 170px;
+        height: 35px;
+    }
+}
+
+/*formatação condicional válida para tela de, no mínimo 1000px, onde mesmo aumentando a tela mais que 1000px o texto da descrição continua mais ao lado esquerdo da tela*/
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%;
+    }
+}

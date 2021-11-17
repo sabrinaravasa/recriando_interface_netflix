@@ -1,0 +1,102 @@
+:root{
+    /* variável chamada vermelho e preta porque são as cores que usamos muito no site, então facilita ao invés de toda hora ter que trocar a cor*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    /*reset, comandos iniciais*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*elementos se apertam, mas nao extrapolam suas caixas*/
+}
+
+/*elementos base*/
+body{
+    /*todas alterações feitas no body podem afetam também os filhos do body, ou seja, tudo que está dentro*/
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif; /*selecionou o conjunto de fontes, caso a primeira não funcione tem as outras*/
+    color: white;
+}
+
+header .container{
+    /* container abrange a caixa do logo e os ícones*/
+    display: flex; /*joga tudo pra mesma linha*/
+    flex-direction: row;
+    align-items: center; /*centraliza os ícones*/
+    justify-content: space-between; /*deixa um espaço no meio dos elementos*/
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 35px;
+}
+
+header nav a{
+    text-decoration: none; /*tirou o sublinado que estava antes, ficou sem decoração*/
+    color: #AAA; /*colou uma cor cinza claro*/
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: #fff; /*quando o mouse está sobre a âncora, fica branco ao invés de cinza claro*/
+}
+
+.capa_principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../recursos/capaoutlander.jpg'); /*deixa um gradiente, imagem um pouco mais transparente que o normal*/
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*joga os elementos pra forma de coluna*/
+    justify-content: center; /*centraliza todos os elementos na caixa*/
+    align-items: flex-start; /*elementos começam da esquerda*/
+}
+
+.capa_principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.capa_principal .titulo{
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botao{
+    border:none;
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    padding: 10px 10px; /*padding lida com o espaço interno dos elementos, primeiro valor cima/baixo e segundo valor lados*/
+    margin-right: 10px; /*espaçamento entre os elementos, à sua direita*/
+    font-size: 13px;
+    cursor: pointer; /*aparece a mãozinha quando está com o cursor em cima do botão*/
+    transition: .3s ease all; /*suaviza o aparecimento da mãozinha, um leve delay de 3 segundos*/
+    border-radius: 4px; /*arredonda cantos*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 15px; /*pequeno espaço antes de todo container (logo, título, descrição e botões), à esquerda dele*/
+}
+
+.capa_principal .container{
+    width: 45%;
+}
+
+.box_carrossel{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel{
+    margin-top: 10px;
+}

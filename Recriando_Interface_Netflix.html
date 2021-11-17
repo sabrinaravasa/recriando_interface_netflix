@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <!--recurso externo owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="capa_principal">
+            <div class="container">
+                <h3 class="titulo">OUTLANDER</h3>
+                <p class="descricao">E se o seu futuro fosse o passado? Nesse conto épico, um guerreiro e uma enfermeira vivem uma paixão avassaladora, mas 200 anos os separam.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <!--recurso externo do ícone de play-->
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <!--recurso externo do ícone de informações-->
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrossel">
+        <div class="owl-carousel owl-theme">
+            <!--aqui fizemos "na mão" mas isso normalmente seria reenderizado pelo back-end para não ficar nesse copia e cola enorme-->
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_carrossel" src="recursos/mini10.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!--recurso externo que permite usar ícones no código sem precisar ficar carregando tudo na pasta-->
+    <script src="https://kit.fontawesome.com/48582b9be2.js" crossorigin="anonymous"></script>
+    <!--recurso externo owl js-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!--está chamando o setup que copiamos lá do site do owl carousel-->
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
